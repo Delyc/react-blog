@@ -1,0 +1,115 @@
+.footer{
+    border-top: 1px solid white;
+    position: relative;
+    top: 5rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    padding-top: 3rem;
+}
+.first{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+  
+}
+.social{
+    display: flex;
+ 
+
+    gap: 0.2rem;
+}
+.social img{
+    width: 2vw;
+
+}
+.social .link{
+    width: 1.8vw;
+    height: 5vh;
+}
+.footer form{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+}
+.footer form textarea{
+    height: 20vh;
+}
+
+.contact h1{
+    text-align: center;
+}
+.contact{
+    width: 25%;
+}
+.sub{
+    position: absolute;
+    background-color: #69ADE7;
+    right: 18rem;
+    height: 6vh;
+    width: 4vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.send{
+    height: 5vh;
+    width: 3vw;
+
+}
+.email{
+    position: relative;
+    width: 20vw;
+}
+.copy{
+    color: white;
+    position: relative;
+    top: 8rem;
+}
+
+@media (min-width: 320px) and (max-width: 480px){
+    .footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem !important;
+    }
+    .first{
+        width: 70%;
+    }
+    .social img{
+        width: 5vw;
+        height: 3vh;
+    }
+    .link{
+        width: 5vw !important;
+        height: 3vh !important;
+    }
+    .contact{
+        width: 70%;
+    }
+    .email{
+        width: 80%;
+        height: 4vh !important;
+    }
+    .sub{
+        right: 4.5rem;
+        width: 13vw;
+        height: 4vh !important;
+    }
+    .send{
+        height: 3vh !important;
+        width: 5vw;
+    }
+    .copy{
+        top: 3rem !important;
+        text-align: center;
+    }
+    .contact h1{
+        text-align: start;
+
+    }
+}

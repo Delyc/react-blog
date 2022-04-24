@@ -1,0 +1,707 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&display=swap');
+
+:root{
+    --primaryfont: 'Dongle', sans-serif;
+}
+
+
+* {
+  font-family: var(--primaryfont) !important;
+  font-size: 1.3rem;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: black;
+}
+
+.App {
+  background: #abb0f0;
+  height: 100vh;
+}
+
+
+
+
+/* ====================login==================== */
+.title{
+  color: white;
+  text-align: center;
+  font-size: 3rem;
+}
+.login-{
+ 
+
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 4rem;
+  
+}
+.login- form{
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  gap: 0.5rem;
+  
+}
+
+.login- p{
+  color: white;
+}
+.login- span{
+  color: #69ADE7;
+  font-weight: bolder
+}
+
+
+
+input[type="email"],
+input[type="text"],
+  input[type="password"] {
+      background-color: white !important;
+      border: 0;
+      height: 6vh;
+      color: #141E30;
+      text-align: center;
+      border-radius: 3px;
+
+}
+input:focus {
+  outline: none;
+}
+
+button{
+  background-color: #69ADE7;
+  height: 6vh;
+      color: white;
+      font-family: bolder;
+      text-align: center;
+      border-radius: 3px;
+      border: 0;
+}
+
+
+
+
+/* ========================add blog =================*/
+.addBlog{
+  position: relative;
+  top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.addBlog form{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+textarea{
+  text-align: center;
+  height: 15rem;
+  border-radius: 3px;
+}
+textarea:focus{
+  outline: none;
+}
+
+
+/*=====all blogs =================*/
+.blog-allblogs{
+
+  position: relative;
+  top: 3rem;
+  width: 70%;
+  display: flex;
+  z-index: -5;
+ 
+  
+}
+.blog-allblogs p{
+  color: white;
+}
+.blogs{
+ 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.single-blog{
+  box-shadow: 2px 2px 2px 2px rgba(218, 212, 212, 0.027);
+  background-color: #141e3044;
+  gap: 1rem;
+  padding: 1rem;
+  word-break: break-all;
+  margin-bottom: 1rem;
+  width: 30%;
+
+}
+.blogs-map{
+  
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 1rem;
+
+}
+
+.more{
+  background-color: #69ADE7;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  border-radius: 3px;
+  width: 5vw !important;
+  height: 4vh !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.edit{
+ 
+  background-color: white;
+  text-decoration: none;
+  border-radius: 3px;
+  width: 5vw !important;
+  height: 4vh !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Link{
+  text-decoration: none;
+  color: white;
+}
+.Link2{
+  color: #69ADE7 ;
+  text-decoration: none;
+
+}
+
+.Link-buttons{
+  display: flex;
+  gap: 0.5rem;
+}
+
+
+/* =======================more ========================*/
+.blog-detail{
+
+  color: white;
+  position: relative;
+  top: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.blog-one{
+  padding: 1rem;
+  width: 50%;
+  word-break: break-all;
+  box-shadow: 2px 2px 2px 2px rgba(218, 212, 212, 0.027);
+  background-color: #141e3044;
+}
+
+/* ===============edit====================== */
+.edit-post{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 5rem;
+}
+.edit-form form{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* =========== skeleton ================*/
+.blog-details-skeleton{
+  box-shadow: 2px 2px 2px 2px rgba(218, 212, 212, 0.027);
+  background-color: #141e3044;
+  width: 50%;
+  height: 39vh;
+  border-radius: 5px;
+
+}
+.load{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+.loading{
+  border: 8px solid #69ace723;
+  border-radius: 50%;
+  border-top: 8px solid white;
+  width: 50px;
+  height: 50px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+
+
+/* ====================home============ */
+.home{
+  background-image: url("./assets/img/best-blogs.jpeg");
+  height: 100vh;
+  background-repeat: repeat;
+  background-size: cover;
+  position: relative;
+  color: white;
+}
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.863);
+  color: white;
+
+}
+.test{
+  color: white;
+  position: absolute;
+  top: 30%;
+  left: 20%;
+}
+
+.test h1{
+  font-size: 10rem;
+  margin-bottom: 0 !important;
+}
+
+.blog-p p{
+  margin-top: -5rem;
+  margin-left: 0.5rem;
+}
+.code{
+  width: 8vw;
+
+}
+.code-blog{
+  display: flex;
+}
+article{
+  color: white;
+  width: 25%;
+}
+.articles{
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  position: relative;
+  top: 5rem;
+}
+article img{
+  width: 100%;
+  position: relative;
+  height: 50vh;
+  border-radius: 5px;
+}
+
+.title{
+  color: white;
+}
+
+.overlay-p {
+  position: absolute;
+  top: 0%;
+  padding: 2rem;
+  width: 25%;
+  height: 50vh;
+  background-color: rgba(0, 0, 0, 0.603);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.25s;
+
+
+}
+.overlay-p>* {
+  transform: translateY(50px);
+  transition: transform 0.25s;
+}
+
+.overlay-p:hover>* {
+  transform: translateY(0);
+
+}
+.overlay-p:hover {
+  opacity: 1;
+}
+
+
+.overlay-p p{
+  
+  font-size: 1.3rem;
+  
+}
+.intro{
+  top: 3rem;
+  display: flex;
+ position: relative;
+ align-items: center;
+ justify-content: center;
+ gap: 2rem;
+ 
+}
+.img-home img{
+  height: 80vh;
+  width: 30vw;
+  border-radius: 10px;
+}
+.tech-home h1{
+  color: #69ADE7 ;
+  
+}
+.tech-home p{
+  color: white;
+}
+.tech-home{
+  width: 30%;
+}
+.more-blogs{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 5rem;
+  align-items: center;
+  
+}
+
+.more-blogs-btn{
+  position: relative;
+
+  display: flex;
+
+  padding: 6rem;
+}
+
+.more-blogs-btn button{
+  width: 10vw;
+}
+
+button:hover{
+  transform: scale(1.05);
+  
+}
+.more-blogs h1{
+  color: #69ADE7;
+  font-size: 3rem;
+}
+.more-blogs p{
+  color: white;
+}
+.heading{
+  
+  width: 78%;
+  
+}
+
+.hr-first{
+  background-color: #69ADE7;
+  height: 1.5vh;
+  border: 0;
+  width: 5vw;
+  border-radius: 20px;
+}
+
+.hr-second{
+  background-color: white;
+  height: 1.5vh;
+  border: 0;
+  width: 5vw;
+  border-radius: 20px;
+  margin-left: 1rem;
+  margin-bottom: 0.2rem;
+}
+
+.hr:hover{
+  transform: scale(1.05);
+}
+
+
+
+
+
+
+
+/*============================== responsiveness====================== */
+
+@media (min-width: 320px) and (max-width: 480px) {
+  /* ============home ==========*/
+  .intro{
+    display: flex;
+    flex-direction: column;
+  }
+  .more-blogs-btn button{
+    width: 30vw;
+  }
+  .hr-second,.hr-first{
+    width: 10vw;
+  }
+  .tech-home, .img-home{
+    width: 80%;
+  }
+  .img-home img{
+    width: 100%;
+    height: 60vh;
+  }
+  .articles{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ 
+  }
+  article{
+    width: 80%;
+   
+  }
+  .post-over{
+    width: 100%;
+  }
+  .overlay-p{
+    width: 80% !important;
+    outline: thin solid red;
+  }
+  /*=================== allblogs ==================*/
+  .blogs-map{
+
+    margin-left: -1rem !important;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .single-blog{
+    width: 100%;
+  }
+  .blog-allblogs{
+    width: 100%;
+  }
+  .blogs{
+    padding: 0;
+  }
+  .edit, .more{
+    width: 15vw !important;
+    height: 3vh !important;
+  }
+
+
+  /* =============blog details================= */
+  .blog-one{
+    width: 90%;
+  }
+
+  
+  /* ============= edit ================= */
+  .edit-post{
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .edit-form{
+
+    width: 80%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  textarea{
+    height: 30vh;
+  }
+
+    /* ============= add ================= */
+    .addBlog{
+      width: 100% !important;
+    }
+    .addBlog form{
+      width: 80%;
+    }
+
+    /*==========sign up*===================*/
+    .login- form{
+      width: 80%;
+    }
+
+
+}
+
+
+
+
+
+@media (min-width: 480px) and (max-width: 768px) {
+  /*=================== allblogs ==================*/
+  .blogs-map{
+
+    margin-left: -1rem !important;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .single-blog{
+    width: 100%;
+  }
+  .blog-allblogs{
+    width: 100%;
+  }
+  .blogs{
+    padding: 0;
+  }
+  .edit, .more{
+    width: 15vw !important;
+    height: 5vh !important;
+  }
+
+
+  /* =============blog details================= */
+  .blog-one{
+    width: 90%;
+  }
+
+  
+  /* ============= edit ================= */
+  .edit-post{
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .edit-form{
+
+    width: 80%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  textarea{
+    height: 30vh;
+  }
+
+    /* ============= add ================= */
+    .addBlog{
+      width: 100% !important;
+    }
+    .addBlog form{
+      width: 80%;
+    }
+
+    /*==========sign up*===================*/
+    .login- form{
+      width: 80% !important;
+     
+    }
+
+
+}
+
+
+
+@media (min-width: 796px) and (max-width: 1024px) {
+  /*=================== allblogs ==================*/
+  .blogs-map{
+
+    margin-left: -1rem !important;
+    width: 100%;
+    display: flex;
+
+  }
+  .single-blog{
+    width: 45%;
+  }
+  .blog-allblogs{
+    width: 100%;
+  }
+  .blogs{
+    padding: 0;
+  }
+  .edit, .more{
+    width: 8vw !important;
+    height: 3vh !important;
+  }
+
+
+  /* =============blog details================= */
+  .blog-one{
+    width: 90%;
+  }
+
+  
+  /* ============= edit ================= */
+  .edit-post{
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .edit-form{
+
+    width: 80%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  textarea{
+    height: 30vh;
+  }
+
+    /* ============= add ================= */
+    .addBlog{
+      width: 100% !important;
+    }
+    .addBlog form{
+      width: 80%;
+    }
+
+    /*==========sign up*===================*/
+    .login- form{
+      width: 60%;
+    }
+    
+input[type="email"],
+input[type="text"],
+  input[type="password"], button {
+    height: 5vh;
+  }
+
+
+}
