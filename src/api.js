@@ -26,6 +26,10 @@ axiosBase.interceptors.response.use(
     if (error?.response?.status == 401 && !original._retry) {
       const data = JSON.parse(localStorage.getItem("user")) || {};
       original._retry = true;
+
+      if (Object.keys(data).length == 0) {
+        return (window.location.href = `/login?next=${window.location.pathname}`);
+      }
       const res = await axiosBase.post("/users/authenticate", data);
       localStorage.setItem("token", res?.data.content.token);
       original.headers["x-auth-token"] = res?.data.content.token;

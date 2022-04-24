@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 const Navbar = () => {
@@ -16,18 +16,45 @@ const Navbar = () => {
       window.removeEventListener("resize", changeWidth);
     };
   }, []);
+  const user = localStorage.getItem("user") || null;
+  const logout = () => {
+    localStorage.clear();
+    return (window.location.pathname = "/login");
+  };
 
   return (
     <nav>
-      
-     
       {(menu || screen > 500) && (
         <ul className="list">
-         
-          <li><Link  className="items" to="/">Home</Link></li>
-          <li><Link  className="items" to="/allblogs">Blog</Link></li>
-          <li><Link  className="items" to="/sign">Sign up</Link></li>
-          <button><Link className="button-login" to="/login">Login</Link></button>
+          <li>
+            <Link className="items" to="/">
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link className="items" to="/allblogs">
+              Blog
+            </Link>
+          </li>
+          {!user && (
+            <>
+              <li>
+                <Link className="items" to="/sign">
+                  Sign up
+                </Link>
+              </li>
+              <button>
+                <Link className="button-login" to="/login">
+                  Login
+                </Link>
+              </button>
+            </>
+          )}
+          {user && (
+            <button className="logout" onClick={logout}>
+              Logout
+            </button>
+          )}
         </ul>
       )}
 

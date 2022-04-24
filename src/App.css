@@ -1,9 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Dongle:wght@300&display=swap");
 
-:root{
-    --primaryfont: 'Dongle', sans-serif;
+:root {
+  --primaryfont: "Dongle", sans-serif;
 }
-
 
 * {
   font-family: var(--primaryfont) !important;
@@ -12,7 +11,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-body{
+body {
   background-color: black;
 }
 
@@ -21,75 +20,61 @@ body{
   height: 100vh;
 }
 
-
-
-
 /* ====================login==================== */
-.title{
+.title {
   color: white;
   text-align: center;
   font-size: 3rem;
 }
-.login-{
- 
-
-
+.login- {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   position: relative;
   top: 4rem;
-  
 }
-.login- form{
+.login- form {
   display: flex;
   flex-direction: column;
   width: 25%;
   gap: 0.5rem;
-  
 }
 
-.login- p{
+.login- p {
   color: white;
 }
-.login- span{
-  color: #69ADE7;
-  font-weight: bolder
+.login- span {
+  color: #69ade7;
+  font-weight: bolder;
 }
-
-
 
 input[type="email"],
 input[type="text"],
-  input[type="password"] {
-      background-color: white !important;
-      border: 0;
-      height: 6vh;
-      color: #141E30;
-      text-align: center;
-      border-radius: 3px;
-
+input[type="password"] {
+  background-color: white !important;
+  border: 0;
+  height: 6vh;
+  color: #141e30;
+  text-align: center;
+  border-radius: 3px;
 }
 input:focus {
   outline: none;
 }
 
-button{
-  background-color: #69ADE7;
+button {
+  background-color: #69ade7;
   height: 6vh;
-      color: white;
-      font-family: bolder;
-      text-align: center;
-      border-radius: 3px;
-      border: 0;
+  color: white;
+  font-family: bolder;
+  text-align: center;
+  border-radius: 3px;
+  border: 0;
 }
 
-
-
-
 /* ========================add blog =================*/
-.addBlog{
+.addBlog {
   position: relative;
   top: 2rem;
   display: flex;
@@ -97,43 +82,37 @@ button{
   align-items: center;
   justify-content: center;
 }
-.addBlog form{
+.addBlog form {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
 }
-textarea{
+textarea {
   text-align: center;
   height: 15rem;
   border-radius: 3px;
 }
-textarea:focus{
+textarea:focus {
   outline: none;
 }
 
-
 /*=====all blogs =================*/
-.blog-allblogs{
-
+.blog-allblogs {
   position: relative;
   top: 3rem;
   width: 70%;
   display: flex;
-  z-index: -5;
- 
-  
+  z-index: 0;
 }
-.blog-allblogs p{
+.blog-allblogs p {
   color: white;
 }
-.blogs{
- 
+.blogs {
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
-.single-blog{
+.single-blog {
   box-shadow: 2px 2px 2px 2px rgba(218, 212, 212, 0.027);
   background-color: #141e3044;
   gap: 1rem;
@@ -141,19 +120,16 @@ textarea:focus{
   word-break: break-all;
   margin-bottom: 1rem;
   width: 30%;
-
 }
-.blogs-map{
-  
+.blogs-map {
   display: flex;
   width: 100%;
   flex-wrap: wrap;
   gap: 1rem;
-
 }
 
-.more{
-  background-color: #69ADE7;
+.more {
+  background-color: #69ade7;
   text-decoration: none;
   text-align: center;
   color: white;
@@ -164,8 +140,7 @@ textarea:focus{
   align-items: center;
   justify-content: center;
 }
-.edit{
- 
+.edit {
   background-color: white;
   text-decoration: none;
   border-radius: 3px;
@@ -176,25 +151,22 @@ textarea:focus{
   justify-content: center;
 }
 
-.Link{
+.Link {
   text-decoration: none;
   color: white;
 }
-.Link2{
-  color: #69ADE7 ;
+.Link2 {
+  color: #69ade7;
   text-decoration: none;
-
 }
 
-.Link-buttons{
+.Link-buttons {
   display: flex;
   gap: 0.5rem;
 }
 
-
 /* =======================more ========================*/
-.blog-detail{
-
+.blog-detail {
   color: white;
   position: relative;
   top: 5rem;
@@ -204,7 +176,7 @@ textarea:focus{
   flex-direction: column;
 }
 
-.blog-one{
+.blog-one {
   padding: 1rem;
   width: 50%;
   word-break: break-all;
@@ -213,38 +185,35 @@ textarea:focus{
 }
 
 /* ===============edit====================== */
-.edit-post{
+.edit-post {
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
   top: 5rem;
 }
-.edit-form form{
+.edit-form form {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
 
 /* =========== skeleton ================*/
-.blog-details-skeleton{
+.blog-details-skeleton {
   box-shadow: 2px 2px 2px 2px rgba(218, 212, 212, 0.027);
   background-color: #141e3044;
   width: 50%;
   height: 39vh;
   border-radius: 5px;
-
 }
-.load{
+.load {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
 }
 
-
-.loading{
+.loading {
   border: 8px solid #69ace723;
   border-radius: 50%;
   border-top: 8px solid white;
@@ -255,20 +224,25 @@ textarea:focus{
 }
 /* Safari */
 @-webkit-keyframes spin {
-  0% { -webkit-transform: rotate(0deg); }
-  100% { -webkit-transform: rotate(360deg); }
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
-
-
-
 /* ====================home============ */
-.home{
+.home {
   background-image: url("./assets/img/best-blogs.jpeg");
   height: 100vh;
   background-repeat: repeat;
@@ -276,7 +250,7 @@ textarea:focus{
   position: relative;
   color: white;
 }
-.overlay{
+.overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -284,50 +258,48 @@ textarea:focus{
   height: 100%;
   background-color: rgba(0, 0, 0, 0.863);
   color: white;
-
 }
-.test{
+.test {
   color: white;
   position: absolute;
   top: 30%;
   left: 20%;
 }
 
-.test h1{
+.test h1 {
   font-size: 10rem;
   margin-bottom: 0 !important;
 }
 
-.blog-p p{
+.blog-p p {
   margin-top: -5rem;
   margin-left: 0.5rem;
 }
-.code{
+.code {
   width: 8vw;
-
 }
-.code-blog{
+.code-blog {
   display: flex;
 }
-article{
+article {
   color: white;
   width: 25%;
 }
-.articles{
+.articles {
   display: flex;
   justify-content: center;
   gap: 1rem;
   position: relative;
   top: 5rem;
 }
-article img{
+article img {
   width: 100%;
   position: relative;
   height: 50vh;
   border-radius: 5px;
 }
 
-.title{
+.title {
   color: white;
 }
 
@@ -345,62 +317,53 @@ article img{
   justify-content: center;
   opacity: 0;
   transition: opacity 0.25s;
-
-
 }
-.overlay-p>* {
+.overlay-p > * {
   transform: translateY(50px);
   transition: transform 0.25s;
 }
 
-.overlay-p:hover>* {
+.overlay-p:hover > * {
   transform: translateY(0);
-
 }
 .overlay-p:hover {
   opacity: 1;
 }
 
-
-.overlay-p p{
-  
+.overlay-p p {
   font-size: 1.3rem;
-  
 }
-.intro{
+.intro {
   top: 3rem;
   display: flex;
- position: relative;
- align-items: center;
- justify-content: center;
- gap: 2rem;
- 
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
 }
-.img-home img{
+.img-home img {
   height: 80vh;
   width: 30vw;
   border-radius: 10px;
 }
-.tech-home h1{
-  color: #69ADE7 ;
-  
+.tech-home h1 {
+  color: #69ade7;
 }
-.tech-home p{
+.tech-home p {
   color: white;
 }
-.tech-home{
+.tech-home {
   width: 30%;
 }
-.more-blogs{
+.more-blogs {
   display: flex;
   flex-direction: column;
   position: relative;
   top: 5rem;
   align-items: center;
-  
 }
 
-.more-blogs-btn{
+.more-blogs-btn {
   position: relative;
 
   display: flex;
@@ -408,36 +371,33 @@ article img{
   padding: 6rem;
 }
 
-.more-blogs-btn button{
+.more-blogs-btn button {
   width: 10vw;
 }
 
-button:hover{
+button:hover {
   transform: scale(1.05);
-  
 }
-.more-blogs h1{
-  color: #69ADE7;
+.more-blogs h1 {
+  color: #69ade7;
   font-size: 3rem;
 }
-.more-blogs p{
+.more-blogs p {
   color: white;
 }
-.heading{
-  
+.heading {
   width: 78%;
-  
 }
 
-.hr-first{
-  background-color: #69ADE7;
+.hr-first {
+  background-color: #69ade7;
   height: 1.5vh;
   border: 0;
   width: 5vw;
   border-radius: 20px;
 }
 
-.hr-second{
+.hr-second {
   background-color: white;
   height: 1.5vh;
   border: 0;
@@ -447,261 +407,234 @@ button:hover{
   margin-bottom: 0.2rem;
 }
 
-.hr:hover{
+.hr:hover {
   transform: scale(1.05);
 }
-
-
-
-
-
-
 
 /*============================== responsiveness====================== */
 
 @media (min-width: 320px) and (max-width: 480px) {
   /* ============home ==========*/
-  .intro{
+  .intro {
     display: flex;
     flex-direction: column;
   }
-  .more-blogs-btn button{
+  .more-blogs-btn button {
     width: 30vw;
   }
-  .hr-second,.hr-first{
+  .hr-second,
+  .hr-first {
     width: 10vw;
   }
-  .tech-home, .img-home{
+  .tech-home,
+  .img-home {
     width: 80%;
   }
-  .img-home img{
+  .img-home img {
     width: 100%;
     height: 60vh;
   }
-  .articles{
+  .articles {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
- 
   }
-  article{
+  article {
     width: 80%;
-   
   }
-  .post-over{
+  .post-over {
     width: 100%;
+    position: relative;
   }
-  .overlay-p{
+  .overlay-p {
     width: 80% !important;
     outline: thin solid red;
   }
   /*=================== allblogs ==================*/
-  .blogs-map{
-
+  .blogs-map {
     margin-left: -1rem !important;
     width: 100%;
     display: flex;
     flex-direction: column;
   }
-  .single-blog{
+  .single-blog {
     width: 100%;
   }
-  .blog-allblogs{
+  .blog-allblogs {
     width: 100%;
   }
-  .blogs{
+  .blogs {
     padding: 0;
   }
-  .edit, .more{
+  .edit,
+  .more {
     width: 15vw !important;
     height: 3vh !important;
   }
 
-
   /* =============blog details================= */
-  .blog-one{
+  .blog-one {
     width: 90%;
   }
 
-  
   /* ============= edit ================= */
-  .edit-post{
+  .edit-post {
     width: 100% !important;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
   }
-  .edit-form{
-
+  .edit-form {
     width: 80%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  textarea{
+  textarea {
     height: 30vh;
   }
 
-    /* ============= add ================= */
-    .addBlog{
-      width: 100% !important;
-    }
-    .addBlog form{
-      width: 80%;
-    }
+  /* ============= add ================= */
+  .addBlog {
+    width: 100% !important;
+  }
+  .addBlog form {
+    width: 80%;
+  }
 
-    /*==========sign up*===================*/
-    .login- form{
-      width: 80%;
-    }
-
-
+  /*==========sign up*===================*/
+  .login- form {
+    width: 80%;
+  }
 }
-
-
-
-
 
 @media (min-width: 480px) and (max-width: 768px) {
   /*=================== allblogs ==================*/
-  .blogs-map{
-
+  .blogs-map {
     margin-left: -1rem !important;
     width: 100%;
     display: flex;
     flex-direction: column;
   }
-  .single-blog{
+  .single-blog {
     width: 100%;
   }
-  .blog-allblogs{
+  .blog-allblogs {
     width: 100%;
   }
-  .blogs{
+  .blogs {
     padding: 0;
   }
-  .edit, .more{
+  .edit,
+  .more {
     width: 15vw !important;
     height: 5vh !important;
   }
 
-
   /* =============blog details================= */
-  .blog-one{
+  .blog-one {
     width: 90%;
   }
 
-  
   /* ============= edit ================= */
-  .edit-post{
+  .edit-post {
     width: 100% !important;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
   }
-  .edit-form{
-
+  .edit-form {
     width: 80%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  textarea{
+  textarea {
     height: 30vh;
   }
+  .d-none {
+    display: none !important;
+  }
 
-    /* ============= add ================= */
-    .addBlog{
-      width: 100% !important;
-    }
-    .addBlog form{
-      width: 80%;
-    }
+  /* ============= add ================= */
+  .addBlog {
+    width: 100% !important;
+  }
+  .addBlog form {
+    width: 80%;
+  }
 
-    /*==========sign up*===================*/
-    .login- form{
-      width: 80% !important;
-     
-    }
-
-
+  /*==========sign up*===================*/
+  .login- form {
+    width: 80% !important;
+  }
 }
-
-
 
 @media (min-width: 796px) and (max-width: 1024px) {
   /*=================== allblogs ==================*/
-  .blogs-map{
-
+  .blogs-map {
     margin-left: -1rem !important;
     width: 100%;
     display: flex;
-
   }
-  .single-blog{
+  .single-blog {
     width: 45%;
   }
-  .blog-allblogs{
+  .blog-allblogs {
     width: 100%;
   }
-  .blogs{
+  .blogs {
     padding: 0;
   }
-  .edit, .more{
+  .edit,
+  .more {
     width: 8vw !important;
     height: 3vh !important;
   }
 
-
   /* =============blog details================= */
-  .blog-one{
+  .blog-one {
     width: 90%;
   }
 
-  
   /* ============= edit ================= */
-  .edit-post{
+  .edit-post {
     width: 100% !important;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
   }
-  .edit-form{
-
+  .edit-form {
     width: 80%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  textarea{
+  textarea {
     height: 30vh;
   }
 
-    /* ============= add ================= */
-    .addBlog{
-      width: 100% !important;
-    }
-    .addBlog form{
-      width: 80%;
-    }
-
-    /*==========sign up*===================*/
-    .login- form{
-      width: 60%;
-    }
-    
-input[type="email"],
-input[type="text"],
-  input[type="password"], button {
-    height: 5vh;
+  /* ============= add ================= */
+  .addBlog {
+    width: 100% !important;
+  }
+  .addBlog form {
+    width: 80%;
   }
 
+  /*==========sign up*===================*/
+  .login- form {
+    width: 60%;
+  }
 
+  input[type="email"],
+  input[type="text"],
+  input[type="password"],
+  button {
+    height: 5vh;
+  }
 }
