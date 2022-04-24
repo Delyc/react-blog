@@ -26,6 +26,10 @@ body {
   text-align: center;
   font-size: 3rem;
 }
+.login-req{
+  color: red !important;
+  font-weight: bolder;
+}
 .login- {
   display: flex;
   flex-direction: column;
@@ -97,6 +101,13 @@ textarea:focus {
 }
 
 /*=====all blogs =================*/
+.action{
+  background-color: #141e3000 !important;
+  margin-top: 0.5rem;
+}
+.action img{
+  width: 2vw;
+}
 .blog-allblogs {
   position: relative;
   top: 3rem;
@@ -107,10 +118,40 @@ textarea:focus {
 .blog-allblogs p {
   color: white;
 }
+.hrtwo{
+
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1rem;
+}
+.add-btn{
+  color: white;
+  text-decoration: none;
+}
+.add-button{
+  width: 7vw !important;
+  display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
 .blogs {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+  top: 1rem;
+}
+.blogs_h1{
+  color: white;
+  margin-top: 4rem;
+  text-align: center;
+  font-size: 3rem;
+}
+.blogs_p{
+  color: white;
+  text-align: center;
 }
 .single-blog {
   box-shadow: 2px 2px 2px 2px rgba(218, 212, 212, 0.027);
@@ -163,6 +204,13 @@ textarea:focus {
 .Link-buttons {
   display: flex;
   gap: 0.5rem;
+  background-color: #141e30;
+  width: 8vw;
+  height: 5vh;
+  display: flex;
+  align-items: center !important;
+  justify-content: center;
+  border-radius: 3px;
 }
 
 /* =======================more ========================*/
@@ -211,6 +259,10 @@ textarea:focus {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
+}
+.load-text{
+  color: white;
 }
 
 .loading {
@@ -448,18 +500,31 @@ button:hover {
     position: relative;
   }
   .overlay-p {
-    width: 80% !important;
-    outline: thin solid red;
+    width: 100% !important;
+
   }
   /*=================== allblogs ==================*/
   .blogs-map {
-    margin-left: -1rem !important;
+   
     width: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .add-button{
+    width: 30vw !important;
+    
+  }
+  .Link-buttons{
+    width: 30vw !important;
+    height: 6vh;
+  }
+  .action img{
+    width: 7vw !important;
   }
   .single-blog {
-    width: 100%;
+    width: 90%;
   }
   .blog-allblogs {
     width: 100%;

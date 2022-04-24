@@ -1,9 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import axiosBase from "../api";
+import Footer from "../components/footer/Footer";
 import Navbar from "../components/NavBar/Navbar";
+import { useNavigate } from "react-router-dom";
 
 function EditPost() {
+  const navigate = useNavigate();
   const [blog, setBlog] = useState();
   const [caption, setCaption] = useState();
   const { id } = useParams();
@@ -30,7 +33,7 @@ function EditPost() {
       const res = await axiosBase.put("/posts/" + id, data, {
         headers: { "x-auth-token": localStorage.getItem("token") },
       });
-      console.log(res);
+      navigate("/allblogs")
     } catch (error) {
       console.error(error);
     }
@@ -73,6 +76,7 @@ function EditPost() {
         <h1>loading ......</h1>
       )}
     </div>
+    <Footer />
     </>
   
   );

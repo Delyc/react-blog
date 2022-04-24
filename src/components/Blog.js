@@ -1,9 +1,12 @@
 import React, { useState } from "react";
 import axiosBase from "../api";
+import Footer from "./footer/Footer";
 import Navbar from "./NavBar/Navbar";
+import { useNavigate } from "react-router-dom";
 
 
 function Blog() {
+  const navigate = useNavigate()
   const [caption, setCaption] = useState();
   const [err, setErr] = useState("");
     
@@ -31,15 +34,18 @@ function Blog() {
     };
     await createPost(postData);
     setCaption("");
+    navigate("/allblogs")
  
   };
 
   return (
     <>
     <Navbar />
+    <h1 className="blogs_h1">Add Blog</h1>
+    <p className="blogs_p">Let us know what is on your mind</p>
 
 <div className="addBlog">
-      <h1>blog</h1>
+  
       <form action="" onSubmit={(e) => onSubmit(e)}>
       <p>{err}</p>
       <textarea name="caption" placeholder="Post here...." id="" cols="30" rows="10"></textarea>
@@ -52,6 +58,7 @@ function Blog() {
 
     
     </div>
+    <Footer />
     
     </>
     

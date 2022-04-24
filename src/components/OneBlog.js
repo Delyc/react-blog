@@ -1,7 +1,11 @@
 import React, { useRef } from "react";
 import { Link } from "react-router-dom";
 import axiosBase from "../api";
+import edit from "../assets/icons/edit.png"
+import readmore from "../assets/icons/readmore.png"
+import deletee from "../assets/icons/delete.png"
 var truncate = require("lodash/truncate");
+
 
 
 const OneBlog = ({ post }) => {
@@ -36,21 +40,22 @@ const OneBlog = ({ post }) => {
         })}
       </p>
       <div className="Link-buttons">
-        <button className="more">
+        <button className="action">
           {" "}
-          <Link className="Link" to={`/blog/${post._id}`}>
-            More
+          <Link className="" to={`/blog/${post._id}`}> 
+          <img src={readmore} alt="" />
+       
           </Link>
         </button>
-        <button className="edit">
+        <button className="action">
           {" "}
-          <Link className="Link2" to={`/edit/${post._id}`}>
-            Edit
+          <Link className="" to={`/edit/${post._id}`}>
+          <img src={edit} alt="" />
           </Link>
         </button>
-        <button onClick={(e) => deletePost()} className="delete">
+        <button onClick={(e) => deletePost()} className="action">
           {" "}
-          Delete
+          <img src={deletee} alt="" />
         </button>
       </div>
     </div>

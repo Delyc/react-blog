@@ -3,6 +3,8 @@ import Footer from "../components/footer/Footer";
 import Navbar from "../components/NavBar/Navbar";
 import code from"../assets/icons/code.png"
 import post1 from"../assets/img/banner.jpeg"
+import post2 from"../assets/img/tech.jpg"
+import post3 from"../assets/img/back.jpg"
 import tech from "../assets/img/logy.webp"
 import { Link } from "react-router-dom";
 
@@ -50,7 +52,7 @@ function Hom() {
           <figure className="post-over">
             <img src={post1} alt="" />
             <figcaption className="overlay-p">
-           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p> 
+           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p> 
 
             </figcaption>
           </figure>
@@ -58,18 +60,18 @@ function Hom() {
   
         <article>
           <figure className="post-over">
-            <img src={post1} alt="" />
+            <img src={post2} alt="" />
             <figcaption className="overlay-p">
-           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p> 
+           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p> 
 
             </figcaption>
           </figure>
         </article>
         <article>
           <figure className="post-over">
-            <img src={post1} alt="" />
+            <img src={post3} alt="" />
             <figcaption className="overlay-p">
-           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p> 
+           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p> 
 
             </figcaption>
           </figure>

@@ -2,6 +2,7 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import axiosBase from "../api";
+import Footer from "../components/footer/Footer";
 import Navbar from "../components/NavBar/Navbar";
 import BlogDetailsSkeleton from "../skeleton/BlogDetailsSkeleton";
 
@@ -50,6 +51,7 @@ function BlogDetails() {
       )}
      
     </div>
+    <Footer />
     </>
     
   );

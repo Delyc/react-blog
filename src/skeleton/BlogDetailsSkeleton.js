@@ -8,7 +8,7 @@ function BlogDetailsSkeleton() {
         
 
         </div>
-        <h1>lading skeletoon.....</h1>
+        <h1 className='load-text'>Fetching posts</h1>
 
 
 

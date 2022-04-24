@@ -35,7 +35,7 @@ export default function Login() {
     setPassword("");
     try {
       await loginUser(loginData);
-      navigate(to || "/blog");
+      navigate(to || "/allblogs");
     } catch (error) {
       setErr(error?.response?.data?.errors || error.message);
     }
@@ -47,7 +47,7 @@ export default function Login() {
       <div className="login-">
         <form>
           <h1 className="title">Login</h1>
-          <p>{!to ? "" : "Login is required"}</p>
+          <p className="login-req">{!to ? "" : "Login is required"}</p>
           <p>{err}</p>
           <input
             type="email"
