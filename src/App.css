@@ -471,6 +471,26 @@ button:hover {
     display: flex;
     flex-direction: column;
   }
+  .home{
+    width: 100%;
+  }
+  .test{
+    left: 10% !important;
+  }
+  .test h1{
+    font-size: 8rem;
+  }
+  .blog-p p {
+    margin-top: -4rem;
+    margin-left: 0.5rem;
+  }
+  .more-blogs{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+  }
   .more-blogs-btn button {
     width: 30vw;
   }
@@ -493,7 +513,8 @@ button:hover {
     align-items: center;
   }
   article {
-    width: 80%;
+    width: 90%;
+    margin-left: 1rem;
   }
   .post-over {
     width: 100%;
