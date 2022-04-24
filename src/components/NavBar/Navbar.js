@@ -24,8 +24,8 @@ const Navbar = () => {
       {(menu || screen > 500) && (
         <ul className="list">
          
-          <li><Link  className="items" to="/sign">Home</Link></li>
-          <li><Link  className="items" to="/sign">Blog</Link></li>
+          <li><Link  className="items" to="/">Home</Link></li>
+          <li><Link  className="items" to="/allblogs">Blog</Link></li>
           <li><Link  className="items" to="/sign">Sign up</Link></li>
           <button><Link className="button-login" to="/login">Login</Link></button>
         </ul>
